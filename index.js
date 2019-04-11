@@ -1,3 +1,9 @@
+let hashFunction = function(keyString, maxSize){
+    keyString.split("").map(function(item){
+        item.charCodeAt()
+    }).reduce(function(a,b){a+b}) % maxSize
+}
+
 function LaviHash(){
     this.size = 0
     this.store = []
